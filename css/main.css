@@ -1,0 +1,200 @@
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+.header {
+  width: 1300px;
+  height: 120px;
+  margin: 0px auto;
+  border-bottom: 4px solid black;
+  background: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+}
+
+.header .inner {
+  height: 100%;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  left: 10px;
+}
+
+.main {
+  padding-top: 120px;
+}
+
+.header .gnb {text-align: right;}
+.header .gnb ul {display: inline-block;}
+.header .gnb ul:after {content: ""; display: block; clear: both;}
+
+.header .gnb li {
+  float: left;
+  padding: 0 25px;
+  font-size: 20px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+  line-height: 90px;
+  margin-top: 30px;
+}
+
+.header .gnb a {
+  position: relative;
+}
+
+.header .gnb a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform: scaleX(0);
+  transition: 0.3s all ease-out;
+}
+
+.header .gnb li:hover > a::after {transform: scaleX(1);}
+
+.main .section1 {width:1360px; position: relative; margin: 40px auto; box-sizing: border-box;}
+.main .section1:after {content: ""; display: block; clear: both;}
+.main .section1 .image_area {float: left; width: 50%; height:500px; text-align: center; box-sizing: border-box; padding: 30px;}
+.main .section1 .text_area {float: right; width: 50%; box-sizing: border-box; padding: 100px 30px; text-align: center; height: 500px;}
+.main hr {width: 1300px; border-color: #ababab; border: 0; border-top: 1px solid rgba(0, 0, 0, 0.1);}
+.main .section2 {width:1360px; position: relative; margin: 40px auto; box-sizing: border-box;}
+.main .section2:after {content: ""; display: block; clear: both;}
+.main .section2 .image_area {float: right; width: 50%; height:500px; text-align: center; box-sizing: border-box; padding: 30px;}
+.main .section2 .text_area {float: left; width: 50%; box-sizing: border-box; padding: 100px 30px; text-align: center; height: 500px;}
+
+.main .section1 .image {
+  background: url(../images/main_image1.jpg) no-repeat;
+  border: 1px solid #ededed; box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+}
+
+.main .section2 .image {
+  background: url(../images/main_image2.jpg) no-repeat;
+  border: 1px solid #ededed; box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.main .section1 .text_area .title {
+  font-size: 30px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+}
+
+.main .section1 .text_sub_area {
+  margin-top: 80px;
+}
+
+.main .section1 .text_sub_area p {
+  margin-top: 20px;
+}
+
+.main .section1 .text_area .sub_title {
+  font-size: 18px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+
+.main .section1 .text_area .sub_content {
+  font-size: 15px;
+  font-family: 'NotoSans';
+  font-weight: 300;
+  display: inline-block;
+}
+
+.main .section2 .text_area .title {
+  font-size: 30px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+}
+
+.main .section2 .text_sub_area {
+  margin-top: 80px;
+}
+
+.main .section2 .text_sub_area p {
+  margin-top: 20px;
+}
+
+.main .section2 .text_area .sub_title {
+  font-size: 18px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+  display: inline-block;
+  width: 120px;
+  text-align: left;
+}
+
+.main .section2 .text_area .sub_content {
+  font-size: 15px;
+  font-family: 'NotoSans';
+  font-weight: 300;
+  display: inline-block;
+}
+
+.main .section3 {width:1340px; position: relative; margin: 80px auto; box-sizing: border-box;}
+.main .section3 .title {
+  font-size: 30px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+  padding: 0px 20px;
+}
+
+.main .section3 .image_list_area1 {margin-top: 60px;}
+.main .section3 ul:after {content: ""; display: block; clear: both;}
+
+.main .section3 .sub_title {
+  padding: 0px 20px;
+  font-size: 20px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.main .section3 li {
+  width: 25%;
+  padding: 20px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.main .section3 img {
+  width: 60%;
+}
+
+.main .section3 .bg_area {
+  text-align: center;
+  padding: 65px 20px;
+  background: #ededed;
+  border: 0px solid #ededed;
+}
+
+.main .section3 img{
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  box-shadow: 0 10px 36px 0 rgba(0, 0, 0, 0.05);
+}
+.main .section3 .bg_area:hover img{
+  transform: translateY(-5px);
+  box-shadow: 0 10px 36px 0 rgba(0, 0, 0, 0.55);
+}
