@@ -8,13 +8,14 @@ header {
   width: 1300px;
   height: 120px;
   margin: 0px auto;
-  border-bottom: 4px solid black;
   background: rgba(255, 255, 255, 0.9);
   box-sizing: border-box;
+  padding: 0px 20px;
 }
 
 .header .inner {
   height: 100%;
+  border-bottom: 4px solid black;
   position: relative;
 }
 
@@ -32,9 +33,19 @@ header {
   padding-top: 120px;
 }
 
-.header .gnb {text-align: right;}
-.header .gnb ul {display: inline-block;}
-.header .gnb ul:after {content: ""; display: block; clear: both;}
+.header .gnb {
+  text-align: right;
+}
+
+.header .gnb ul {
+  display: inline-block;
+}
+
+.header .gnb ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 .header .gnb li {
   float: left;
@@ -62,19 +73,67 @@ header {
   transition: 0.3s all ease-out;
 }
 
-.header .gnb li:hover > a::after {transform: scaleX(1);}
+.header .gnb li:hover > a::after {
+  transform: scaleX(1);
+}
 
-.main .section1 {width:1360px; position: relative; margin: 40px auto; box-sizing: border-box;}
-.main .section1:after {content: ""; display: block; clear: both;}
-.main .section1 .image_area {float: left; width: 50%; height:500px; text-align: center; box-sizing: border-box; padding: 30px;}
-.main .section1 .text_area {float: right; width: 50%; box-sizing: border-box; padding: 100px 30px; text-align: center; height: 500px;}
-.main hr {width: 1300px; border-color: #ababab; border: 0; border-top: 1px solid rgba(0, 0, 0, 0.1);}
-.main .section2 {width:1360px; position: relative; margin: 40px auto; box-sizing: border-box;}
-.main .section2:after {content: ""; display: block; clear: both;}
-.main .section2 .image_area {float: right; width: 50%; height:500px; text-align: center; box-sizing: border-box; padding: 30px;}
-.main .section2 .text_area {float: left; width: 50%; box-sizing: border-box; padding: 100px 30px; text-align: center; height: 500px;}
+.main .section1 {
+  width:1300px;
+  position: relative;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.main .section1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main .section1 .image_area {
+  float: left;
+  width: 50%;
+  height:500px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.main .section1 .text_area {
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 100px 20px;
+  text-align: center;
+  height: 500px;
+}
+
+.main hr {
+  width: 1260px;
+  border-color: #ababab;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.main .section2 {
+  width:1300px;
+  position: relative;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.main .section2:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main .section2 .image_area {float: right; width: 50%; height:500px; text-align: center; box-sizing: border-box; padding: 20px;}
+.main .section2 .text_area {float: left; width: 50%; box-sizing: border-box; padding: 100px 20px; text-align: center; height: 500px;}
 
 .main .section1 .image {
+  /* ##이미지 변환시 아래의 경로를 수정해 주시면 됩니다. */
   background: url(../images/main_image1.jpg) no-repeat;
   border: 1px solid #ededed; box-sizing: border-box;
   width: 100%;
@@ -152,16 +211,33 @@ header {
   display: inline-block;
 }
 
-.main .section3 {width:1340px; position: relative; margin: 80px auto; box-sizing: border-box;}
-.main .section3 .title {
-  font-size: 30px;
-  font-family: 'NotoSans';
-  font-weight: 700;
+.main .section3 {
+  width:1300px;
+  position: relative;
+  margin: 80px auto;
+  box-sizing: border-box;
+}
+
+.main .section3 .title_area {
   padding: 0px 20px;
 }
 
-.main .section3 .image_list_area1 {margin-top: 60px;}
-.main .section3 ul:after {content: ""; display: block; clear: both;}
+.main .section3 .title {
+  display: block;
+  font-size: 30px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+}
+
+.main .section3 .image_list_area1 {
+  margin-top: 60px;
+}
+
+.main .section3 ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 .main .section3 .sub_title {
   padding: 0px 20px;
@@ -179,7 +255,7 @@ header {
 }
 
 .main .section3 img {
-  width: 60%;
+  height: 190px;
 }
 
 .main .section3 .bg_area {
@@ -197,4 +273,160 @@ header {
 .main .section3 .bg_area:hover img{
   transform: translateY(-5px);
   box-shadow: 0 10px 36px 0 rgba(0, 0, 0, 0.55);
+}
+
+.main .section4 {
+  width:1300px;
+  position: relative;
+  margin: 80px auto;
+  box-sizing: border-box;
+}
+
+.main .section4 .title_area {
+  padding: 0px 20px;
+  margin-bottom: 60px;
+}
+
+.main .section4 .title {
+  display: block;
+  font-size: 30px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+}
+
+.main .section4:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.main .section4 .map_container {
+  float: right;
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.main .section4 .map_area {
+  height:500px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ededed;
+}
+
+.main .section4 .text_area {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 130px 20px;
+  text-align: center;
+  height: 500px;
+}
+
+.main .section4 .text_sub_area{
+  text-align: left;
+  padding: 80px 100px;
+  line-height: 40px;
+  color: #5e5f61;
+}
+
+.main .section4 .text_area .sub_title {
+  font-size: 20px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+  display: inline-block;
+  width: 60px;
+  text-align: left;
+}
+
+.main .section4 .text_area .sub_content {
+  font-size: 20px;
+  font-family: 'NotoSans';
+  font-weight: 500;
+  display: inline-block;
+}
+
+.footer {
+  width: 1300px;
+  height: 120px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.footer .inner {
+  border-top: 4px solid black;
+  position: relative;
+  padding: 30px 0px;
+  line-height: 20px;
+}
+
+.footer ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer li {
+  float: left;
+  box-sizing: border-box;
+}
+
+.footer .left_footer {
+  width: 15%;
+  font-size: 25px;
+  font-family: 'NotoSans';
+  font-weight: 700;
+}
+
+.footer .center_footer {
+  width: 60%;
+  font-size: 13px;
+  font-family: 'NotoSans';
+  font-weight: 300;
+}
+
+.footer .right_footer {
+  width: 25%;
+  font-size: 15px;
+  font-family: 'NotoSans';
+  font-weight: 300;
+  text-align: right;
+}
+
+.footer .center_footer strong {
+  font-weight: 500;
+}
+
+.footer .right_footer ul {
+  display: inline-block;
+}
+
+.footer .right_footer li {
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.footer hr {
+  width: 1260px;
+  border-color: #ababab;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+
+.footer .space {
+  padding: 0px 20px;
+  color: #ccc;
+}
+
+.footer .right_footer a {
+  display: block;
+}
+
+.footer .right_footer img {
+  display: block;
+  width: 25px;
+  height: 25px;
 }
